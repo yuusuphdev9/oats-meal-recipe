@@ -1,0 +1,190 @@
+body {
+    background-color: rgba(3, 3, 3, 0.2);
+}
+
+h1 {
+    color: rgb(150, 118, 118);
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    margin: 20px;
+    font-family: "Fraunces", serif;
+}
+
+img {
+
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    height: 400px;
+    width: 500px;
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.intro {
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+.prep {
+    background-color: bisque;
+    margin: 10px;
+    border-radius: 10px;
+    /* border: 3px solid brown; */
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(247, 255, 240, 0.74);
+    transition: 0.3s ease;
+}
+
+.prep:hover {
+    background-color: aliceblue;
+    transform: translateY(-5px);
+}
+
+.ingredient {
+    background-color: #d1afc5;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(247, 255, 240, 0.74);
+    transition: 0.3s ease;
+}
+
+.ingredient:hover {
+    background-color: rgb(179, 159, 205);
+    transform: translateY(-5px);
+}
+
+.instruction {
+    background-color: #CDEAC0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(247, 255, 240, 0.74);
+    transition: 0.3s ease;
+}
+
+.instruction:hover {
+    background-color: #C9B8A6;
+    transform: translateY(-5px);
+}
+
+.tip {
+    background-color: #ce939324;
+    border-radius: 10px;
+    padding: 20px;
+    margin:10px;
+    box-sizing: border-box;
+    box-shadow: rgba(247, 255, 240, 0.74);
+    transition: 0.3s ease;
+}
+
+.tip:hover {
+    background-color: #7d767b;
+    transform: translateY(-5px);
+}
+a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 14px;
+    background: #f3e9d7;      /* soft oatmeal-like tone */
+    color: #5a4633;           /* warm brown text */
+    border: 2px solid #e0d3bf;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background: #e0d3bf;
+    border-color: #c8bca6;
+    transform: translateY(-4px);
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.container section {
+    flex: 1 1 45%;
+    min-width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .container section {
+        flex: 1 1 100%;
+    }
+     h1 {
+        font-size: 30px;
+     }
+     img {
+        height: 200px;
+    width: 300px;
+     }
+    .intro {
+        font-size: medium;
+    }
+}
